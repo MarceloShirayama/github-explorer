@@ -1,5 +1,5 @@
 .vscode
 .env
-.dist
-.build
+dist
+build
 node_modules
