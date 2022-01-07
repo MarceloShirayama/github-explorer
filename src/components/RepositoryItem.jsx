@@ -1,11 +1,9 @@
-export const RespositoryItem = () => {
+export const RepositoryItem = (props) => {
   return (
     <li>
-      <strong>unform</strong>
-      <p>Forms in ReactJS</p>
-      <a href="">
-        access repository
-      </a>
+      <strong>{props.repository.name ?? "Default"}</strong>
+      <p>{props.repository.description ?? "Default description"}</p>
+      <a href={props.repository.link}>access repository</a>
     </li>
-  )
-}
+  );
+};
