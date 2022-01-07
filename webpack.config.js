@@ -11,6 +11,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  devServer: {
+    static: path.resolve(__dirname, 'public'),
+  },
   module: {
     rules: [
       {
@@ -24,5 +27,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html'),
     })
-  ]
+  ],
 };
