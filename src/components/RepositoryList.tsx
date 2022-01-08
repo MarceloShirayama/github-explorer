@@ -3,7 +3,7 @@ import { RepositoryItem } from "./RepositoryItem";
 import "../styles/repositories.scss";
 
 export const RepositoryList = () => {
-  const [repositories, setRepositories] = useState([]);
+  const [repositories, setRepositories] = useState<any[]>([]);
 
   useEffect(() => {
     fetch("https://api.github.com/orgs/Rocketseat/repos")

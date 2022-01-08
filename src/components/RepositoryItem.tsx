@@ -1,4 +1,4 @@
-export const RepositoryItem = (props) => {
+export const RepositoryItem = (props: any) => {
   return (
     <li>
       <strong>{props.repository.name}</strong>
